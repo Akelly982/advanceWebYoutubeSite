@@ -5,9 +5,33 @@
 --lightColor: #e8e8e8;
 --lightColorHover: #a8a8a8;
 --testColor: #800080;
+--signUpBkgImg: image(images);
 }
 
+.akBtnAccentHover{
+    background-color: var(--colorAccent);
+}
+.akBtnAccentHover:hover{
+    background-color: var(--colorAccent);
+}
 
+.akSignUpBkg{
+    background-image: url("images/wireframe512.png");
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+}
+
+.akLoginBkg{
+    background-image: url("images/wireframe512.png");
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+}
+
+.akBkgAccent{
+    background-color: var(--accentColor);
+}
 
 
 .akBkgTest {
@@ -106,6 +130,31 @@
     padding-Top: 80px;
 }
 
+.akPaddingBottom10{
+    padding-Bottom: 10px;
+}
+
+.akPaddingBottom15{
+    padding-Bottom: 15px;
+}
+
+.akPaddingBottom17{
+    padding-Bottom: 17px;
+}
+
+.akPaddingBottom20{
+    padding-Bottom: 20px;
+}
+
+.akPaddingBottom40{
+    padding-Bottom: 40px;
+}
+
+.akPaddingBottom80{
+    padding-Bottom: 80px;
+}
+
+
 .akPanelPadding{
     padding: 10px;
 }
@@ -139,6 +188,10 @@
 .akRow{
     display:flex;
     flex-direction: row;
+}
+
+.akMinHeight25{
+    min-height: 25px;
 }
 
 .akMinHeight50{
@@ -263,7 +316,22 @@
     flex-direction: column;
 }
 
+
+.akFlexColCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .akAlignJustifyCenter{
+    align-items: center;
+    justify-content: center;
+}
+
+.akAlignCenter{
+    align-content: center;
+    align-items: center;
     align-self: center;
     justify-content: center;
 }

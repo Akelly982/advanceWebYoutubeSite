@@ -6,7 +6,6 @@
     <?php
     include 'modularContent/head/headLocal.php';
     ?>
-    
 </head>
     
 
