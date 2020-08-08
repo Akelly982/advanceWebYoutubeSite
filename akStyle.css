@@ -1,0 +1,290 @@
+:root{
+--primaryDarkColor: #2d2d2d;
+--primaryColor: #3b3b3b;
+--accentColor: #ffd313;
+--lightColor: #e8e8e8;
+--lightColorHover: #a8a8a8;
+--testColor: #800080;
+}
+
+
+
+
+.akBkgTest {
+    background-color: var(--testColor);
+}
+
+.akTextTest {
+    color: var(--testColor);
+}
+
+
+.akBkgNav {
+  background-color: var(--primaryDarkColor);
+}
+
+.akBkgPrimary {
+    background-color: var(--primaryColor);
+}
+
+.akBkgLight{
+    background-color: var(--lightColor);
+}
+
+.akTextLight{
+    color: var(--lightColor);
+}
+
+.akTextLightHover{
+    color: var(--lightColor);
+}
+
+.akTextLightHover:hover{
+    color: var(--lightColorHover);
+    text-decoration: none;
+}
+
+
+.akTextAccent{
+    color: var(--accentColor);
+}
+
+
+.akPaddingLeft10{
+    padding-left: 10px;
+}
+
+.akPaddingLeft20{
+    padding-left: 20px;
+}
+
+.akPaddingLeft40{
+    padding-left: 40px;
+}
+
+.akPaddingLeft80{
+    padding-left: 80px;
+}
+
+.akPaddingRight10{
+    padding-Right: 10px;
+}
+
+.akPaddingRight20{
+    padding-Right: 20px;
+}
+
+.akPaddingRight40{
+    padding-Right: 40px;
+}
+
+.akPaddingRight80{
+    padding-Right: 80px;
+}
+
+.akPaddingTop10{
+    padding-Top: 10px;
+}
+
+.akPaddingTop15{
+    padding-Top: 15px;
+}
+
+.akPaddingTop17{
+    padding-Top: 17px;
+}
+
+.akPaddingTop20{
+    padding-Top: 20px;
+}
+
+.akPaddingTop40{
+    padding-Top: 40px;
+}
+
+.akPaddingTop80{
+    padding-Top: 80px;
+}
+
+.akPanelPadding{
+    padding: 10px;
+}
+
+.akPanelRadius{
+    border-radius: 15px;
+}
+
+.akBorderRadius10{
+    border-radius: 10px;
+}
+
+.akBorderRadius15{
+    border-radius: 15px;
+}
+
+.akBorderRadius20{
+    border-radius: 20px;
+}
+
+
+.akTopRadius{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.akBottomRadius{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.akRow{
+    display:flex;
+    flex-direction: row;
+}
+
+.akMinHeight50{
+    min-height: 50px;
+}
+
+.akMinHeight100{
+    min-height: 100px;
+}
+
+.akMinHeight150{
+    min-height: 150px;
+}
+
+.akMinHeight200{
+    min-height: 200px;
+}
+
+.akObjectContain{
+    object-fit: contain;
+}
+
+.akMaxHeight50{
+    max-height: 50px;
+}
+
+.akMaxHeight100{
+    max-height: 100px;
+}
+
+.akMaxHeight150{
+    max-height: 150px;
+}
+
+.akMaxHeight200{
+    max-height: 200px;
+}
+
+.akMaxHeight250{
+    max-height: 250px;
+}
+
+.akMaxWidth50{
+    max-width: 50px;
+}
+
+.akMaxWidth100{
+    max-width: 100px;
+}
+
+.akMaxWidth150{
+    max-width: 150px;
+}
+
+.akMaxWidth200{
+    max-width: 200px;
+}
+
+.akMaxWidth250{
+    max-width: 250px;
+}
+
+.akMaxWidth400{
+    max-width: 400px;
+}
+
+.akBorderRadius0{
+    border-radius: 0px;
+}
+
+.akPadding10{
+    padding: 10px;
+}
+
+.akPadding15{
+    padding: 15px;
+}
+
+.akPadding20{
+    padding: 20px;
+}
+
+.akPaddingBottom10{
+    padding-bottom: 10px;
+}
+
+.akBold{
+    font-weight: bold;
+}
+
+.akMarginLeft10{
+    margin-left: 10px;
+}
+
+.akMarginLeft20{
+    margin-left: 20px;
+}
+
+.akMarginLeft30{
+    margin-left: 30px;
+}
+
+.akMarginLeft40{
+    margin-left: 40px;
+}
+
+.akMarginLeft50{
+    margin-left: 50px;
+}
+
+.akMarginLeft100{
+    margin-left: 100px;
+}
+
+.akMarginLeft200{
+    margin-left: 200px;
+}
+
+
+.akFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.akAlignJustifyCenter{
+    align-self: center;
+    justify-content: center;
+}
+
+.akMinWidth400{
+    min-width: 400px;
+}
+
+.akMarginRight40p{
+    margin-right: 40%;
+}
+
+.akMarginLeft40p{
+    margin-left: 40%;
+}
+
+
+.akMargin10{
+    margin: 10px;
+}
+
+.akMargin20{
+    margin: 20px;
+}
