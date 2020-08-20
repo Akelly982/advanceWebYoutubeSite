@@ -18,17 +18,7 @@
             <li><a href="products.php">Products</a></li>
             <li><a href="about.php">About</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-<!--                below added php to get user name on right-->
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $_SESSION["username"] ." "; ?><span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="sessions/sessionDestroy.php" id="logOutButton">Log out</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Cart</a></li>
-                </ul>
-            </li>
-          </ul>
+<!--            Dosent have right hand content -->
         </div>
       </div>
     </nav>

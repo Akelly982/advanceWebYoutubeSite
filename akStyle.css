@@ -57,10 +57,13 @@
 
 .akTextLight{
     color: var(--lightColor);
+    text-decoration: none;
+    
 }
 
 .akTextLightHover{
     color: var(--lightColor);
+    
 }
 
 .akTextLightHover:hover{
@@ -68,9 +71,21 @@
     text-decoration: none;
 }
 
+/*
+.akTextLightHover:active{
+    text-decoration: none;
+    color: var(--lightColorHover);
+}
+*/
+
+
 
 .akTextAccent{
     color: var(--accentColor);
+}
+
+.akListStyleNone{
+    list-style: none;
 }
 
 
@@ -104,6 +119,10 @@
 
 .akPaddingRight80{
     padding-Right: 80px;
+}
+
+.akPaddingTop5{
+    padding-Top: 5px;
 }
 
 .akPaddingTop10{
@@ -190,6 +209,18 @@
     flex-direction: row;
 }
 
+.akMinHeight10{
+    min-height: 10px;
+}
+
+.akMinHeight15{
+    min-height: 15px;
+}
+
+.akMinHeight20{
+    min-height: 20px;
+}
+
 .akMinHeight25{
     min-height: 25px;
 }
@@ -272,6 +303,18 @@
 
 .akPadding20{
     padding: 20px;
+}
+
+.akPaddingLeft10{
+    padding-left: 10px;
+}
+
+.akPaddingLeft15{
+    padding-left: 15px;
+}
+
+.akPaddingLeft20{
+    padding-left: 20px;
 }
 
 .akPaddingBottom10{

@@ -14,7 +14,10 @@
     
     <!--load bootstrap.js-->
     <script src="bootstrap3/js/bootstrap.min.js"></script>
+    
+    
     <!--finally your own javascript-->
+    <script src="javaScript/akJavaScript.js"></script>
     
     
     

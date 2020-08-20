@@ -11,7 +11,7 @@
 
 <navigation>
     <?php
-    include 'modularContent/nav/navSelector.php';
+    include 'modularContent/nav/navEmpty.php';
     ?>
 </navigation>
 
@@ -23,18 +23,26 @@
     <div class="akLoginBkg akFlexColCenter">
         <div class="akBkgPrimary akBorderRadius10 akPaddingLeft40 akPaddingRight40 akPaddingBottom20">
             <h1 class="akTextAccent text-center akPaddingBottom10">Sign up</h1>
-            <form>
+            <form method="post" action="database/signUpResult.php">
             <div class="form-group">
-                <label for="" class="akTextLight">Username</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label class="akTextLight">First name</label>
+                <input type="text" class="form-control" id="fname" name="fname" required>
             </div>
             <div class="form-group">
-                <label for="" class="akTextLight">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label class="akTextLight">Last name</label>
+                <input type="text" class="form-control" id="lname" name="lname" required>
             </div>
             <div class="form-group">
-                <label for="" class="akTextLight">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label class="akTextLight">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label class="akTextLight">Email address</label>
+                <input type="text" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label class="akTextLight">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="akFlexColCenter akPaddingTop10">
                 <button type="submit" class="btn akBkgAccent akTextLightHover akBold">Submit</button>

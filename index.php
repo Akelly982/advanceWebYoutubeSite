@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
     
@@ -6,6 +9,7 @@
     <?php
     include 'modularContent/head/headLocal.php';
     ?>
+    
 </head>
     
 
@@ -15,6 +19,7 @@
     ?>
 </navigation>
 
+    
 <body>
     <!-- spacer here to help clear fixed navbar   -->
     <div class="akBkgLight akMinHeight50"></div>

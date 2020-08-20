@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
     
@@ -17,7 +20,7 @@
 
 <body>
     <!-- spacer here to help clear fixed navbar   -->
-    <div class="akBkgPrimary akMinHeight50"></div>
+    <div class="akBkgPrimary akMinHeight100"></div>
   
 
     <!--Intro text-->

@@ -1,6 +1,8 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
-    
 <head>
     <title>Products</title>
     <?php
@@ -17,13 +19,13 @@
 
 <body>
     <!-- spacer here to help clear fixed navbar   -->
-    <div class="akBkgLight akMinHeight50"></div>
+    <div class="akBkgPrimary akMinHeight50"></div>
     
     
 <!--    search for product top-->
     <div class="container-fluid akBkgPrimary">
         <div class="row">
-            <div class="col-sm-4 akBkgTest akMinHeight50">
+            <div class="col-sm-4 akPaddingTop10 akPaddingBottom10">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="input-group-btn">
@@ -33,11 +35,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-5 akBkgTest akMinHeight50" >
-                <a href="#" class="akPadding10 akTextLightHover">Specials</a>
-                <a href="#" class="akPadding10 akTextLightHover">Recently added</a>
-                <a href="#" class="akPadding10 akTextLightHover">Catagories</a>
+            <div class="col-sm-2"></div>
+<!--            NOTE: navbar-nav keeps <li> element in row-->
+            <div class="col-sm-6 akPaddingTop5 navbar-nav navbar-right row akPaddingLeft20" >
+                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover"> Specials</a></li>
+                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover"> Recently added</a></li>
+<!--                drop down catagory-->
+                <li class="dropdown akListStyleNone akPadding10">
+                    <a href="#" class="akTextLight akTextLightHover dropdown-toggle akpadding10" data-toggle="dropdown"> Catagories <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="akTextLight akTextLightHover">catagory1</a></li>
+                        <li><a href="#" class="akTextLight akTextLightHover">catagory2</a></li>
+                    </ul>
+                </li>
             </div>
         </div>
     </div>
