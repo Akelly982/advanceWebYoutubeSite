@@ -12,8 +12,6 @@
     $email = $_POST["email"];
     $password = $_POST["password"];
     
-    //hash pasword for verify
-    //$password = password_hash($pword, PASSWORD_DEFAULT);
     
     // set up query
     $myQuery = "SELECT id,email,password,firstName, lastName,username FROM users WHERE email = '" .$email. "'LIMIT 1";
@@ -24,6 +22,7 @@
     if (mysqli_num_rows($result) > 0){   //if not empty
         // output data of each row
         $row = mysqli_fetch_array($result);
+        //pasword verify will hash password to verify password
         if (password_verify($password, $row["password"])){  //if password == password for row
             echo "<br> Welcome ".$row["firstName"].", your password is correct";
             echo "<br> you user id is: " . $row["id"];

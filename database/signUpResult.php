@@ -36,13 +36,6 @@
         echo "db Insert successfull";
     }
     
-    //check result of ran query   //this should still work for prepared sql statement 
-//    $result = $conn->query($myQuery);
-//    if (!$result){
-//        die("Error: " .$conn->connect_error);
-//    }else{
-//        echo "db Insert successfull";
-//    }
     
     //close Query
     $myQuery->close();
@@ -50,6 +43,7 @@
     //close db connection
     mysqli_close($conn);  //$conn comes from include connectSQL above
         
+    header('Location: ../index.php');
     ?>
 
 </html>

@@ -42,12 +42,17 @@ session_start();
                 <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover"> Recently added</a></li>
 <!--                drop down catagory-->
                 <li class="dropdown akListStyleNone akPadding10">
-                    <a href="#" class="akTextLight akTextLightHover dropdown-toggle akpadding10" data-toggle="dropdown"> Catagories <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <a href="#" class="akTextLight akTextLightHover dropdown-toggle akpadding10" data-toggle="dropdown" > Catagories <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="">
+                        <?php
+                            include'database/getCategories.php'
+                        ?>
+                        <!--
                         <li><a href="#" class="akTextLight akTextLightHover">catagory1</a></li>
                         <li><a href="#" class="akTextLight akTextLightHover">catagory2</a></li>
+-->
                     </ul>
-                </li>
+                </li>s
             </div>
         </div>
     </div>
