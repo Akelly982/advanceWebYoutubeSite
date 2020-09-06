@@ -1,9 +1,8 @@
-<?php
-session_start();
-?>
 <!doctype html>
 <html lang="en">
-    
+<?php
+    session_start();
+?>
 <head>
     <title>Home</title>
     <?php
@@ -24,24 +23,28 @@ session_start();
     <!-- spacer here to help clear fixed navbar   -->
     <div class="akBkgLight akMinHeight50"></div>
     <div>
-        <img src="images/wireframe1920_512.png"  class="img-responsive" style="width:100%">
+        <img src="images/Hero/akHero.png"  class="img-responsive" style="width:100%">
     </div>
 
     <!--Intro text-->
     <div class="container-fluid text-center akBkgPrimary akMinHeight150 akPaddingTop10">
         <h1 class="akTextAccent"> Recently added </h1>
-        <p class="akTextLight">Be the first to buy the      newest merch</p>
+        <p class="akTextLight">Be the first to buy the newest merch</p>
     </div>
     
     <!-- spacer   -->
     <div class="akBkgLight akMinHeight100"></div>
     
     <!--  recently added list    -->
-    <?php
-        for($i=0; $i<3; $i++){
-            include 'modularContent/itemView.php';
-        }
-    ?>
+    <div class="akBkgLight">
+        <div class="container">    
+            <div class="row">
+                <?php
+                    include 'database/getProductsRecentlyAdded.php';
+                ?>
+            </div>
+        </div>
+    </div>
     
     <!-- spacer   -->
     <div class="akBkgLight akMinHeight100"></div>

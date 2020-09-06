@@ -1,9 +1,8 @@
-<?php
-session_start();
-?>
 <!doctype html>
 <html lang="en">
-    
+<?php
+    session_start();
+?>  
 <head>
     <title>About</title>
     <?php
@@ -46,7 +45,7 @@ session_start();
     <div class="col-md-3"></div>
     <div class="col-md-6">
         <?php
-         include 'modularContent/extra/carousel.php';
+         include 'modularContent/extra/carouselEmployees.php';
         ?>
     </div>
     <div class="col-md-3"></div>

@@ -23,6 +23,7 @@
     <div class="akSignUpBkg akFlexColCenter">
         <div class="akBkgPrimary akBorderRadius10 akPaddingLeft40 akPaddingRight40 akPaddingBottom20">
             <h1 class="akTextAccent text-center akPaddingBottom10">Login</h1>
+<!--            The FORM method POST-->
             <form method="post" action="database/loginResult.php">
             <div class="form-group">
                 <label class="akTextLight">Email address</label>

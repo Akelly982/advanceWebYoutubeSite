@@ -1,14 +1,11 @@
 <?php
     session_start();
 ?>
-
-<!doctype html>
+<!doctypehtml>
 <html lang="en">
-
-    <?php
+<?php
     session_destroy();
     header("Location: ../index.php");
-    ?>
-    
-    
+?>
 </html>
+    

@@ -5,7 +5,53 @@
 --lightColor: #e8e8e8;
 --lightColorHover: #a8a8a8;
 --testColor: #800080;
+--testColor2: red;
 --signUpBkgImg: image(images);
+}
+
+.akBtnItemDiscrete{
+    background-color: var(--primaryColor);
+    border: none;
+    
+    
+}
+
+.akFlexInline{
+    
+}
+
+.akItemObjectFit{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+/*
+.testing{
+    background-image: url("images/wireframe512.png");
+    object-fit: cover;
+    background-size: contain;
+    background-position: center;
+}
+*/
+
+.akBtnItemDiscrete:active{
+/*    background-color: red;*/
+    outline: none;
+/*    outline used to remove btn border after click*/
+}
+
+/*
+.akBtnItemDiscrete:focus{
+    background-color: red;
+    border: none;
+    outline: none;
+    
+}
+*/
+
+button:focus, input[type="button"]:focus {
+    outline: none;
 }
 
 .akBtnAccentHover{
@@ -38,6 +84,10 @@
     background-color: var(--testColor);
 }
 
+.akBkgTest2 {
+    background-color: var(--testColor2);
+}
+
 .akTextTest {
     color: var(--testColor);
 }
@@ -59,6 +109,14 @@
     color: var(--lightColor);
     text-decoration: none;
     
+}
+
+.akTextPrimary{
+    color: var(--primaryColor);
+}
+
+.akProductTitleText{
+    font-size: 1px;
 }
 
 .akTextLightHover{
@@ -182,6 +240,28 @@
     border-radius: 15px;
 }
 
+.akBorder2Accent{
+    border-color: var(--accentColor);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.akBorder1Accent{
+    border-color: var(--accentColor);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.akBorder3Accent{
+    border-color: var(--accentColor);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.akBorderRadius5{
+    border-radius: 5px;
+}
+
 .akBorderRadius10{
     border-radius: 10px;
 }
@@ -207,6 +287,34 @@
 .akRow{
     display:flex;
     flex-direction: row;
+}
+
+.akHeight80{    
+    height: 80px;
+}
+
+.akHeight100{
+    height: 100px;
+}
+
+.akHeight200{
+    height: 200px;
+}
+
+.akHeight300{
+    height: 300px;
+}
+
+.akHeight400{
+    height: 400px;
+}
+
+.akHeight500{
+    height: 500px;
+}
+
+.akHeight600{
+    height: 600px;
 }
 
 .akMinHeight10{
@@ -241,6 +349,38 @@
     min-height: 200px;
 }
 
+.akMinHeight250{
+    min-height: 250px;
+}
+
+.akMinHeight300{
+    min-height: 300px;
+}
+
+.akMinHeight350{
+    min-height: 350px;
+}
+
+.akMinHeight400{
+    min-height: 400px;
+}
+
+.akMinHeight450{
+    min-height: 450px;
+}
+
+.akMinHeight500{
+    min-height: 500px;
+}
+
+.akMinHeight550{
+    min-height: 550px;
+}
+
+.akMinHeight600{
+    min-height: 600px;
+}
+
 .akObjectContain{
     object-fit: contain;
 }
@@ -259,6 +399,10 @@
 
 .akMaxHeight200{
     max-height: 200px;
+}
+
+.akMaxHeight600{
+    max-height: 600px;
 }
 
 .akMaxHeight250{
@@ -288,6 +432,44 @@
 .akMaxWidth400{
     max-width: 400px;
 }
+
+.akMinWidth10{
+    min-Width: 10px;
+}
+
+.akMinWidth15{
+    min-Width: 15px;
+}
+
+.akMinWidth20{
+    min-Width: 20px;
+}
+
+.akMinWidth25{
+    min-Width: 25px;
+}
+
+.akMinWidth30{
+    min-Width: 30px;
+}
+
+.akMinWidth35{
+    min-Width: 35px;
+}
+
+.akMinWidth40{
+    min-Width: 40px;
+}
+
+.akMinWidth50{
+    min-Width: 50px;
+}
+
+.akMinWidth100{
+    min-Width: 100px;
+}
+
+
 
 .akBorderRadius0{
     border-radius: 0px;
@@ -359,6 +541,15 @@
     flex-direction: column;
 }
 
+.akFlexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
 
 .akFlexColCenter{
     display: flex;
@@ -398,4 +589,8 @@
 
 .akMargin20{
     margin: 20px;
+}
+
+.akImgCover{
+    object-fit: cover;
 }

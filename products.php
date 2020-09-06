@@ -1,13 +1,97 @@
-<?php
-session_start();
-?>
 <!doctype html>
 <html lang="en">
+<?php
+    session_start();
+?>
 <head>
     <title>Products</title>
     <?php
-    include 'modularContent/head/headLocal.php';
+        include 'modularContent/head/headLocal.php';
     ?>
+<script>
+    //inline JQuery AJAX
+    $(document).ready(function(){
+        
+        $("#btnProductSpecials").click(function(){
+            $.ajax({
+                url:"database/getProductSpecials.php",
+                method:"POST",
+                data : {specials:1},  // just a variable with value 1
+                success : function(myResult){
+                $("#productsPageViewer").html(myResult);
+                }         
+            });  
+        }); 
+        
+       $("#btnProductRecentlyAdded").click(function(){
+            $.ajax({
+                url:"database/getProductsRecentlyAdded.php",
+                method:"POST",
+                data : {specials:1},  // just a variable with value 1
+                success : function(myResult2){
+                $("#productsPageViewer").html(myResult2);
+                }            
+            });  
+        }); 
+        
+        $("#btnCategoryShirts").click(function(){
+            $.ajax({
+                url:"database/getProductsByCategoryId.php",
+                method:"POST",
+                data : {myCategoryId:1},  // just a variable with value 1
+                success : function(myResult3){
+                $("#productsPageViewer").html(myResult3);
+                }            
+            });  
+        }); 
+        
+        $("#btnCategoryMerchandise").click(function(){
+            $.ajax({
+                url:"database/getProductsByCategoryId.php",
+                method:"POST",
+                data : {myCategoryId:5},  // just a variable with value 1
+                success : function(myResult2){
+                $("#productsPageViewer").html(myResult2);
+                }            
+            });  
+        });
+        
+        $("#btnCategoryHoodies").click(function(){
+            $.ajax({
+                url:"database/getProductsByCategoryId.php",
+                method:"POST",
+                data : {myCategoryId:4},
+                success : function(myResult2){
+                $("#productsPageViewer").html(myResult2);
+                }            
+            });  
+        });
+        
+        $("#btnCategoryHats").click(function(){
+            $.ajax({
+                url:"database/getProductsByCategoryId.php",
+                method:"POST",
+                data : {myCategoryId:2},
+                success : function(myResult2){
+                $("#productsPageViewer").html(myResult2);
+                }            
+            });  
+        });
+        
+//        $("#btnDetailView1").click(function(){
+//            $.ajax({
+//                url:"database/getProductDetail.php",
+//                method:"GET",
+//                data : {myid:},
+//                success : function(myResult2){
+//                $("#productsPageViewer").html(myResult2);
+//                }            
+//            });  
+//        });
+        
+    });
+    
+</script>   
 </head>
     
 
@@ -38,8 +122,8 @@ session_start();
             <div class="col-sm-2"></div>
 <!--            NOTE: navbar-nav keeps <li> element in row-->
             <div class="col-sm-6 akPaddingTop5 navbar-nav navbar-right row akPaddingLeft20" >
-                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover"> Specials</a></li>
-                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover"> Recently added</a></li>
+                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover" id="btnProductSpecials"> Specials</a></li>
+                <li class="akListStyleNone akPadding10"><a href="#" class="akTextLight akTextLightHover" id="btnProductRecentlyAdded"> Recently added</a></li>
 <!--                drop down catagory-->
                 <li class="dropdown akListStyleNone akPadding10">
                     <a href="#" class="akTextLight akTextLightHover dropdown-toggle akpadding10" data-toggle="dropdown" > Catagories <span class="caret"></span></a>
@@ -47,10 +131,6 @@ session_start();
                         <?php
                             include'database/getCategories.php'
                         ?>
-                        <!--
-                        <li><a href="#" class="akTextLight akTextLightHover">catagory1</a></li>
-                        <li><a href="#" class="akTextLight akTextLightHover">catagory2</a></li>
--->
                     </ul>
                 </li>s
             </div>
@@ -62,11 +142,19 @@ session_start();
     <div class="akBkgLight akMinHeight50"></div>
     
     <!--  recently added list    -->
-    <?php
-        for($i=0; $i<3; $i++){
-            include 'modularContent/itemView.php';
-        }
-    ?>
+    <div class="akBkgLight">
+        <div class="container">
+            <div class="row">
+                <div id="productsPageViewer">
+<!--                what you see first -->
+                    <?php
+                        include "database/getProductsRandom.php";
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <!-- spacer   -->
     <div class="akBkgLight akMinHeight100"></div>

@@ -30,7 +30,7 @@
             //start session
             session_start();
             echo "<br> session started";
-            // set user id to session
+            //set user id to session
             $_SESSION["id"] = $row["id"];
             $_SESSION["firstName"] = $row["firstName"];
             $_SESSION["lastName"] = $row["lastName"];

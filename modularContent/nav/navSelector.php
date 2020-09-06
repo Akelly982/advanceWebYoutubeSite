@@ -1,11 +1,9 @@
-<!doctype html>
-<html lang="en">
+
 <?php
-    // check if their is an active session by checking id
-    if(session_status() == PHP_SESSION_ACTIVE){
-        include 'notLoggedInNav.php';
-    }else{
+    if(isset($_SESSION["id"])) {
         include 'loggedInNav.php';
+    } else {
+        include 'notLoggedInNav.php';
     }
 ?>
-</html>
+

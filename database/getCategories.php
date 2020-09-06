@@ -1,5 +1,5 @@
 <?php
-    include "alertConnectSQLOO.php";
+    include "connectSQLOO.php";
 
     //get all categories
     $query = $conn->prepare("SELECT id,categoryName FROM category");
@@ -10,14 +10,8 @@
     
     //loop through each row
     while($query -> fetch()){
-        echo '<li><a href="#" class="akTextLight akTextLightHover">' .$categoryName. '</a></li>';
+        echo '<li><p id="btnCategory'. $categoryName .'" href="#" class="akTextLight akTextLightHover">' .$categoryName. '</p></li>';
     }
 
-    
-
-
-        //return ECHO needs to look like this
-            //<li><a href="#" class="akTextLight akTextLightHover">catagory1</a></li>
-            //<li><a href="#" class="akTextLight akTextLightHover">catagory2</a></li>
                             
 ?>

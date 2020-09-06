@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-    
     <nav class="navbar navbar-inverse navbar-fixed-top akBkgNav">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -10,7 +9,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar akBkgTest"></span>                        
           </button>
-          <a href="index.php"><img src="images/wireframe512_256.png" class="img-responsive akMaxHeight50 akPaddingRight20"></a>
+          <a href="index.php"><img src="images/logo/BuiltQuicklyRugged.png" class="img-responsive akMaxHeight50 akPaddingRight20"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
