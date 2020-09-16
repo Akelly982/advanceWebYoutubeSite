@@ -8,90 +8,7 @@
     <?php
         include 'modularContent/head/headLocal.php';
     ?>
-<script>
-    //inline JQuery AJAX
-    $(document).ready(function(){
-        
-        $("#btnProductSpecials").click(function(){
-            $.ajax({
-                url:"database/getProductSpecials.php",
-                method:"POST",
-                data : {specials:1},  // just a variable with value 1
-                success : function(myResult){
-                $("#productsPageViewer").html(myResult);
-                }         
-            });  
-        }); 
-        
-       $("#btnProductRecentlyAdded").click(function(){
-            $.ajax({
-                url:"database/getProductsRecentlyAdded.php",
-                method:"POST",
-                data : {specials:1},  // just a variable with value 1
-                success : function(myResult2){
-                $("#productsPageViewer").html(myResult2);
-                }            
-            });  
-        }); 
-        
-        $("#btnCategoryShirts").click(function(){
-            $.ajax({
-                url:"database/getProductsByCategoryId.php",
-                method:"POST",
-                data : {myCategoryId:1},  // just a variable with value 1
-                success : function(myResult3){
-                $("#productsPageViewer").html(myResult3);
-                }            
-            });  
-        }); 
-        
-        $("#btnCategoryMerchandise").click(function(){
-            $.ajax({
-                url:"database/getProductsByCategoryId.php",
-                method:"POST",
-                data : {myCategoryId:5},  // just a variable with value 1
-                success : function(myResult2){
-                $("#productsPageViewer").html(myResult2);
-                }            
-            });  
-        });
-        
-        $("#btnCategoryHoodies").click(function(){
-            $.ajax({
-                url:"database/getProductsByCategoryId.php",
-                method:"POST",
-                data : {myCategoryId:4},
-                success : function(myResult2){
-                $("#productsPageViewer").html(myResult2);
-                }            
-            });  
-        });
-        
-        $("#btnCategoryHats").click(function(){
-            $.ajax({
-                url:"database/getProductsByCategoryId.php",
-                method:"POST",
-                data : {myCategoryId:2},
-                success : function(myResult2){
-                $("#productsPageViewer").html(myResult2);
-                }            
-            });  
-        });
-        
-//        $("#btnDetailView1").click(function(){
-//            $.ajax({
-//                url:"database/getProductDetail.php",
-//                method:"GET",
-//                data : {myid:},
-//                success : function(myResult2){
-//                $("#productsPageViewer").html(myResult2);
-//                }            
-//            });  
-//        });
-        
-    });
     
-</script>   
 </head>
     
 
@@ -99,6 +16,12 @@
     <?php
     include 'modularContent/nav/navSelector.php';
     ?>
+<!--    set active page -->
+<!--    <currentPage></currentPage>-->
+<!--    <input type="hidden" id="myPage" name="thePage" value="1">-->
+    <script>
+        $("#productsPg").addClass("active");   
+    </script>
 </navigation>
 
 <body>
@@ -111,9 +34,9 @@
         <div class="row">
             <div class="col-sm-4 akPaddingTop10 akPaddingBottom10">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
+                    <input type="text" class="form-control" placeholder="Search" name="searchField" id="searchField">
+                    <div class="input-group-btn" id="btnSearch">
+                        <button class="btn btn-default" type="submit" id="btnSearch">
                         <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </div>

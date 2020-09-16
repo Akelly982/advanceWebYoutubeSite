@@ -8,7 +8,11 @@
     <?php
     include 'modularContent/head/headLocal.php';
     ?>
-    
+    <title>Home</title>
+    <meta name="author" content="Aidan Kelly">
+    <meta name="description" content="LanyardEngine, clothing, shirt, hoodie">
+    <meta name="keywords" content="boltShirt, "
+<!--    description is where search engine looks for SEO-->
 </head>
     
 
@@ -16,6 +20,9 @@
     <?php
     include 'modularContent/nav/navSelector.php';
     ?>
+    <script>
+        $("#homePg").addClass("active");   
+    </script>
 </navigation>
 
     
@@ -48,11 +55,16 @@
     
     <!-- spacer   -->
     <div class="akBkgLight akMinHeight100"></div>
+    
+<!--    sending mail test -->
+    <?php
+        //mail("akelly982@hotmail.com","The subject","hello from aidan")
+    ?>
 </body>
     
 <footer>
     <?php
-    include 'modularContent/footer/footer.php';
+        include 'modularContent/footer/footer.php';
     ?>
 </footer>
     

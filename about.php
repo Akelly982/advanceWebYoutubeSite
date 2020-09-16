@@ -15,6 +15,9 @@
     <?php
     include 'modularContent/nav/navSelector.php';
     ?>
+    <script>
+        $("#aboutPg").addClass("active");   
+    </script>
 </navigation>
 
 <body>

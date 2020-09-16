@@ -1,4 +1,19 @@
 <!doctype html>
+
+<!--
+<?php
+//    $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+//    $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+//    echo "The URL of current page: ".$CurPageURL;
+//    echo "The URL of current page: ".$CurPageURL;
+//    echo "The URL of current page: ".$CurPageURL;
+//    echo "The URL of current page: ".$CurPageURL;
+//
+//    $myCurrentPage = -1
+?>
+-->
+
+
 <html lang="en">
     <nav class="navbar navbar-inverse navbar-fixed-top akBkgNav">
       <div class="container-fluid">
@@ -13,9 +28,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
-            <li><a href="about.php">About</a></li>
+            <li class="" id="homePg"><a href="index.php">Home</a></li>
+            <li class="" id="productsPg"><a href="products.php">Products</a></li>
+            <li class="" id="aboutPg"><a href="about.php">About</a></li>
+            <li class="" id="contactPg"><a href="contact.php">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 <!--              note their is a space befor the text to give spacing-->

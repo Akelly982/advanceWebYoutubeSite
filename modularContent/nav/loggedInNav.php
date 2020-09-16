@@ -14,9 +14,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
-            <li><a href="about.php">About</a></li>
+            <li class="" id="homePg"><a href="index.php">Home</a></li>
+            <li class="" id="productsPg"><a href="products.php">Products</a></li>
+            <li class="" id="aboutPg"><a href="about.php">About</a></li>
+            <li class="" id="contactPg"><a href="contact.php">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 <!--                below added php to get user name on right-->
@@ -24,7 +25,7 @@
                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $_SESSION["username"] ." "; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="sessions/sessionDestroy.php" id="logOutButton">Log out</a></li>
-                            <li><a href="#">Wishlist</a></li>
+<!--                            <li><a href="#">Wishlist</a></li>-->
                             <li><a href="#" data-toggle="modal" data-target="#modalCartView" >Cart</a></li>
                         </ul>
                 </li>
@@ -43,14 +44,17 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title"><?php echo $_SESSION["username"] . "'s cart:"?></h4>
             </div>
+<!--              show modal content -->
             <div class="modal-body">
               <?php
                 include "database/getUserCart.php";
               ?>  
             </div>
             <div class="modal-footer akBkgAccent">
+              <button type="button" class="btn btn-default">Empty Cart</button>
               <button type="button" class="btn btn-default">Purchase</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            
             </div>
           </div>
 

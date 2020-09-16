@@ -12,8 +12,11 @@
 .akBtnItemDiscrete{
     background-color: var(--primaryColor);
     border: none;
-    
-    
+}
+
+.akBtnItemDiscreteBkgLight{
+    background-color: var(--lightColor);
+    border: none;
 }
 
 .akFlexInline{
@@ -469,6 +472,33 @@ button:focus, input[type="button"]:focus {
     min-Width: 100px;
 }
 
+.akMaxWidth10{
+    Max-Width: 10px;
+}
+
+.akMaxWidth15{
+    Max-Width: 15px;
+}
+
+.akMaxWidth20{
+    Max-Width: 20px;
+}
+
+.akMaxWidth25{
+    Max-Width: 25px;
+}
+
+.akMaxWidth30{
+    Max-Width: 30px;
+}
+
+.akMaxWidth40{
+    Max-Width: 40px;
+}
+
+.akMaxWidth50{
+    Max-Width: 50px;
+}
 
 
 .akBorderRadius0{

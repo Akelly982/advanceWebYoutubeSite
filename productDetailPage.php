@@ -25,6 +25,7 @@
     
     $varItemId = $_GET["itemId"];
     $varItemName = $_GET["itemName"];
+    
 //    echo "Selected item Id = ".$varItemId."<br>"; 
 //    echo "selected item Name = ".$varItemName ."<br>";
     
@@ -69,22 +70,22 @@
 <!--        image and description row -->
     <div class="container-fluid akBkgLight">
         <div class="row">
-            <div class="col-md-2 akBkgTest"></div>
+            <div class="col-md-2 akBkgLight"></div>
 <!--            Item Image-->
-            <div class="col-md-4 akBkgTest2 akHeight400">
+            <div class="col-md-4 akBkgLight akHeight400">
                 <?php
                     echo '<img src="images/productImages/'. $myHeroImgPath .'" class="akItemObjectFit">';
                 ?>
             </div>
 <!--            collapses to space between images and text -->
-            <div class="col-md-1 akBkgTest akHeight20"></div>
+            <div class="col-md-1 akBkgLight akHeight20"></div>
 <!--            text -->
-            <div class="col-md-3 akBkgTest2">
+            <div class="col-md-3 akBkgLight">
                 <h3 class="akTextAccent"><?php echo $myName; ?></h3>
                 <p class="akTextPrimary"><?php echo "Price: ".$myPrice; ?></p>
                 <p class="akTextPrimary"><?php echo $myDesc; ?></p>
             </div>
-            <div class="col-md-2 akBkgTest"></div>
+            <div class="col-md-2 akBkgLight"></div>
         </div>
     </div> 
     
@@ -96,7 +97,7 @@
 <!--    IF LOGGED IN *************************-->
         <div class="container-fluid akBkgLight">
             <div class="row">
-                <div class="col-md-2 akBkgTest"></div>
+                <div class="col-md-2 akBkgLight"></div>
                 <div class="col-md-8 akHeight50 akBorderRadius20 akBkgPrimary akBorder3Accent">
                     <form method="post" action="database/productdetailAddToCart.php">
                         <div class="text-center akFlexRow">
@@ -109,24 +110,24 @@
                                     <label class="radio-inline"><input type="radio" name="optradio" value="XXL">XXL</label>
                             </div>
                             <div class="akPadding20">
-                                <input type="number" min="1" max="10" name="quantity" value="1">
+                                <input type="number" min="1" max="10" name="quantity" value="1" id="numQuantity">
                             </div>
                             <div class="akPadding20">
-                                <h3 class="akTextAccent">Total  cost: <p>15.00</p></h3>
+                                <h3 class="akTextAccent">Total  cost: <p id="totalPrice"><?php echo $myPrice ?></p></h3>
                             </div>
                         </div>
                         <div class="akFlexRow akPaddingBottom20">
                             <div>
                                 <button type="submit" class="btn akBkgAccent akTextLightHover akBold">Add to Cart</button>
-                                <button type="submit" class="btn akBkgAccent akTextLightHover akBold">Add to WishList</button>
+<!--                                <button type="submit" class="btn akBkgAccent akTextLightHover akBold">Add to WishList</button>-->
     <!--                            hidden field adding item id for POST method-->
-                                <input type="hidden" name="itemId" value="<?php echo $myId; ?>">
-                                <input type="hidden" name="itemCost" value="<?php echo $myPrice; ?>">
+                                <input type="hidden" name="itemId" id="itemId" value="<?php echo $myId; ?>">
+                                <input type="hidden" name="itemCost" id="itemCost" value="<?php echo $myPrice; ?>">
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-2 akBkgTest"></div>
+                <div class="col-md-2 akBkgLight"></div>
             </div>
         </div> 
     <?php }else{ ?>

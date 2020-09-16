@@ -12,6 +12,9 @@
         $totalCost = $quantity * $_POST["itemCost"];
         $userId = $_SESSION["id"];
     
+//        echo("initial: " . $_POST['itemCost']) . "<br>";
+//        echo("bound: " . $totalCost . "<br>");
+    
         // echo out details to ensure correct
         echo "Item's to be added: <br> ";
         echo "Item id: " . $itemId . "<br>";
@@ -28,7 +31,7 @@
     
         //bind parameters to the query
         $myQuery->bind_param("isdii", $quantity, $size, $totalCost, $userId, $itemId);
-
+            
 
         echo "<br>";
 

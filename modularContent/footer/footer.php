@@ -15,10 +15,20 @@
             </div>
         </div>
         <div class="col-sm-3 akTextLight text-center akPaddingTop20">
-                <p>Phone: 000000000 </p>
-                <p>Email: email@Aidan.com</p>
+                <a href="tel:000000000"> Phone: 000000000 </a>
+                <br>
+                <a href="mailto:aidan@email.com">Email: aidan@email.com</a>
         </div>
         <div class="col-sm-3"></div>
+    </div>
+    
+    <div class="text-center akBkgPrimary akTextLight">
+        <p class="akTextLight">Social links</p>
+        <div class="akFlexRow akBkgPrimary akMaxHeight100">
+            <a href="https://www.facebook.com/" class="akPadding10"><img src="images/iconSocial/iconFacebook.png" class="akMaxHeight50 akMaxWidth50"></a>
+            <a href="https://www.youtube.com/" class="akPadding10"><img src="images/iconSocial/iconYoutube.png" class="akMaxHeight50 akMaxWidth50"></a>
+            <a href="https://www.instagram.com/" class="akPadding10"><img src="images/iconSocial/iconInstagram.png" class="akMaxHeight50 akMaxWidth50"></a>
+        </div>
     </div>
     
     <div class="akMinHeight50 akBkgPrimary"></div>
