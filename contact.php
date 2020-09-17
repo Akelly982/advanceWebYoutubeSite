@@ -48,7 +48,29 @@
     <div class="row akBkgLight">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-        <form></form>    
+        <form method="post" action="contactResponse/contactResponseResult.php">
+                <div class=" akPaddingLeft20 akPaddingRight20 akPaddingTop20">
+                    <label class="akTextPrimary">Name:</label>
+                    <input type="text" class="form-control" id="" name="name" required>
+                </div>
+                <div class=" akPaddingLeft20 akPaddingRight20 akPaddingTop20">
+                    <label class="akTextPrimary">Email:</label>
+                    <input type="text" class="form-control" id="" name="email" required>
+                </div>
+                <div class=" akPaddingLeft20 akPaddingRight20 akPaddingTop20">
+                    <label class="akTextPrimary">Phone: (optional)</label>
+                    <input type="text" class="form-control" id="" name="phone">
+                </div>
+                <div class=" akPaddingLeft20 akPaddingRight20 akPaddingTop20">
+                    <label class="akTextPrimary">Note:</label>
+                    <div class="akHeight100">
+                        <textarea name="note" placeholder="Type question or review here for submission." class="form-control" style="width:auto height:auto" required></textarea>
+                    </div>
+                </div>
+                <div class="akFlexColCenter akPaddingTop20">
+                    <button type="submit" class="btn akBkgAccent akTextLightHover akBold">Submit</button>
+                </div>
+        </form>       
     </div>
     <div class="col-md-3"></div>
     </div>

@@ -14,24 +14,24 @@
     <div class="item active">
       <img src="images/employees/employee1.png" alt="Chania" style="width:100%">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>LA is always so much fun!</p>
+        <h3>Michael</h3>
+        <p>The professional</p>
       </div>
     </div>
 
     <div class="item">
       <img src="images/employees/employee2.png" alt="Chicago" style="width:100%">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+        <h3>Ted</h3>
+        <p>The commedian</p>
       </div>
     </div>
 
     <div class="item">
       <img src="images/employees/employee3.png" alt="New York" style="width:100%">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+        <h3>James</h3>
+        <p>The talent</p>
       </div>
     </div>
   </div>

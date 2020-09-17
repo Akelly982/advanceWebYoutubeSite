@@ -82,7 +82,7 @@
     <div class="row akBkgLight">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-        <h3 class="akMargin20"> this fkasldjflksdajflk;jads fkjdaskl fjsldak jfkl;dsj fklajd flk;jsdalk; fjdaslk;jf lsakd;jf a fjadsklj ;lksd fdsaf sdaf dasfdsa fsd fdas fdasdsafasdfbsdakj fldjsak flsjd flkasdljflk dasjflk jdsaklf jdlsaf kjdlkasj fldkasj flkads fnkjbgerbuognasjkdlfbksalhd flasd hda kdsaf sdhkudsb ndsa fkjsdaf ldsaf ols</h3>    
+        <h3 class="akMargin20">As content creators on on youtube we strive to bring fun interesting video's to our viewers. Here on our site however you can buy merch to help support our youtube channel to help us bring you more videos.</h3>    
     </div>
     <div class="col-md-3"></div>
     </div>

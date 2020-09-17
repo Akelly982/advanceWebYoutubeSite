@@ -56,10 +56,7 @@
     <!-- spacer   -->
     <div class="akBkgLight akMinHeight100"></div>
     
-<!--    sending mail test -->
-    <?php
-        //mail("akelly982@hotmail.com","The subject","hello from aidan")
-    ?>
+
 </body>
     
 <footer>
