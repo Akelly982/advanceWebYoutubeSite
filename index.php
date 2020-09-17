@@ -1,18 +1,17 @@
-<!doctype html>
-<html lang="en">
 <?php
     session_start();
 ?>
+<!doctype html>
+<html lang="en">
+
 <head>
     <title>Home</title>
     <?php
-    include 'modularContent/head/headLocal.php';
+            //headLocalHome used to add SEO to index Page
+        include 'modularContent/head/headLocalHome.php';
     ?>
     <title>Home</title>
     <meta name="author" content="Aidan Kelly">
-    <meta name="description" content="LanyardEngine, clothing, shirt, hoodie">
-    <meta name="keywords" content="boltShirt, "
-<!--    description is where search engine looks for SEO-->
 </head>
     
 

@@ -1,3 +1,6 @@
+<?php
+    header('Location: ../index.php');
+?>
 <!doctype html>
 <html lang="en">
 
@@ -43,7 +46,7 @@
     //close db connection
     mysqli_close($conn);  //$conn comes from include connectSQL above
         
-    header('Location: ../index.php');
+    
     ?>
 
 </html>

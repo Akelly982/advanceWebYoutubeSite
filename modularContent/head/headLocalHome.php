@@ -1,11 +1,19 @@
 <!doctype html>
 <html lang="en">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="author" content="Aidan Kelly">
-
-    <!-- Latest compiled and minified CSS Bootstrap -->
-    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet">  
     
+    
+<!--    description -->
+    <meta name="description" content="The official website of the youtube content creators built quicly.">
+    
+
+<!--    keywords used for SEO-->
+<!--    include seems to go to page rather than in content-->
+    <meta name="keywords" content=" <?php //include "getMetaSEO.php"; ?>" >
+
+    
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet">   
     <!--your css should be last-->
     <link href="akStyle.css" rel="stylesheet">
     

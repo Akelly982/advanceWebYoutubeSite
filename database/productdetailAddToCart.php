@@ -1,8 +1,12 @@
+<?php
+    session_start();
+    header('Location: ../index.php');
+?>
+
 <!doctype html>
 <html lang="en">
     
     <?php
-        session_start();
         include 'connectSQLOO.php';
         
         //set parameters need perameters from POST
@@ -50,8 +54,6 @@
 
         //close db connection
         mysqli_close($conn);  //$conn comes from include connectSQL above
-
-        header('Location: ../index.php');
 
     ?>
 </html>

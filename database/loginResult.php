@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    header('Location: ../index.php');
+?>
 <!doctype html>
 <html lang="en">
 
@@ -27,8 +31,6 @@
             echo "<br> Welcome ".$row["firstName"].", your password is correct";
             echo "<br> you user id is: " . $row["id"];
             
-            //start session
-            session_start();
             echo "<br> session started";
             //set user id to session
             $_SESSION["id"] = $row["id"];
@@ -37,8 +39,6 @@
             $_SESSION["username"] = $row["username"];
             $_SESSION["email"] = $row["email"];
             
-            //return to home
-            header('Location: ../index.php');
             
             
             

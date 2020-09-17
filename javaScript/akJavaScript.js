@@ -1,6 +1,21 @@
 $(document).ready(function(){
     
    
+//        //user cart empty button   (launch php code using jQuery)
+//        $("#btnEmptyCart").click(function(event){
+//            event.preventDefault();
+//            var myId = $("#currentUserId").val();
+//            $.ajax({
+//                url:"database/removeFromUserCartAll.php",
+//                method:"POST",
+//                data : {userId:myId},  // just a variable with value 1
+//                success : function(myResult){
+//                }
+//            });  
+//        });
+    
+    
+        //add to cart menu managing total cost and quantity
         $("#numQuantity").change(function(e){
             e.preventDefault();
                     
@@ -17,6 +32,7 @@ $(document).ready(function(){
     
         });
             
+    
     
         $("#btnProductSpecials").click(function(event){
             event.preventDefault();   //prevents code from overlapping on run, if Jquery code already running skip

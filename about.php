@@ -1,8 +1,9 @@
-<!doctype html>
-<html lang="en">
 <?php
     session_start();
 ?>  
+<!doctype html>
+<html lang="en">
+
 <head>
     <title>About</title>
     <?php

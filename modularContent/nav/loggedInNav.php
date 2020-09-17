@@ -50,10 +50,17 @@
                 include "database/getUserCart.php";
               ?>  
             </div>
-            <div class="modal-footer akBkgAccent">
-              <button type="button" class="btn btn-default">Empty Cart</button>
-              <button type="button" class="btn btn-default">Purchase</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div class="modal-footer akBkgAccent akFlexRow">
+                <form method="post" action="database/removeFromUserCartAll.php" class="akPadding10">
+                    <input type="hidden" name="userId" value="<?php echo $_SESSION["id"]; ?>">
+                    <button id="btnEmptyCart" type="submit" class="btn btn-default">Empty Cart</button>
+                </form>
+                <form method="" action="" class="akPadding10">
+                    <button type="button" class="btn btn-default">Purchase</button>
+                </form>
+                <form method="" action="" class="akPadding10">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </form>
             
             </div>
           </div>
