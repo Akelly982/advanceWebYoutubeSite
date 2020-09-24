@@ -8,8 +8,11 @@
     
 
 <!--    keywords used for SEO-->
-<!--    include seems to go to page rather than in content-->
-    <meta name="keywords" content=" <?php //include "getMetaSEO.php"; ?>" >
+<!--    include seems to go to page rather than in 
+    
+    <?php 
+        include "getMetaSEO.php";
+    ?>
 
     
     <!-- Latest compiled and minified CSS Bootstrap -->

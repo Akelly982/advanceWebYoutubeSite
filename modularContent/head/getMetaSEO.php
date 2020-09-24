@@ -11,9 +11,14 @@ FROM product");
     //store result
     $query -> bind_result($name);
     
+
+    echo '<meta name="keywords" content=';
+        
     //loop through each row
     while($query -> fetch()){
         echo " ".$name.",";
     }
+
+    echo '>';
 
 ?>

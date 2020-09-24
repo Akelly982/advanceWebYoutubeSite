@@ -12,8 +12,6 @@ $dbname = "advancedwebsite";
 
 
 
-
-
 // for online through 000webhost
 
 $servername = "localhost";
