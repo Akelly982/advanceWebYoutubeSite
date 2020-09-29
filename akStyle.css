@@ -65,14 +65,14 @@ button:focus, input[type="button"]:focus {
 }
 
 .akSignUpBkg{
-    background-image: url("images/wireframe512.png");
+    background-image: url("images/Hero/userAccBkg.png");
     background-size: cover;
     height: 1000px;
     background-position: center;
 }
 
 .akLoginBkg{
-    background-image: url("images/wireframe512.png");
+    background-image: url("images/Hero/userAccBkg.png");
     background-size: cover;
     height: 1000px;
     background-position: center;

@@ -20,7 +20,7 @@
     <div class="akBkgPrimary akMinHeight25"></div>
     
 <!--    Input container -->
-    <div class="akLoginBkg akFlexColCenter">
+    <div class="akLoginBkg akFlexColCenter" >
         <div class="akBkgPrimary akBorderRadius10 akPaddingLeft40 akPaddingRight40 akPaddingBottom20">
             <h1 class="akTextAccent text-center akPaddingBottom10">Sign up</h1>
             <form method="post" action="database/signUpResult.php">

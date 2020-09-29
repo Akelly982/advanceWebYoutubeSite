@@ -17,6 +17,7 @@
             <li class="active"><a href="index.php">Home</a></li>
             <li><a href="products.php">Products</a></li>
             <li><a href="about.php">About</a></li>
+            <li class="" id="contactPg"><a href="contact.php">Contact</a></li>
           </ul>
 <!--            Dosent have right hand content -->
         </div>
