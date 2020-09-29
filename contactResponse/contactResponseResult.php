@@ -1,4 +1,5 @@
 <?php
+    header('Location: ../index.php');
 
     // set up email mail sending
     // Using the ini_set()
